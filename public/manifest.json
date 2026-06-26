@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "平均打字速度記錄器",
+  "description": "只統計輸入速度，不儲存實際輸入內容。",
+  "version": "0.1.0",
+  "action": {
+    "default_popup": "popup/index.html",
+    "default_title": "平均打字速度記錄器"
+  },
+  "options_page": "options/index.html",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
