@@ -1,0 +1,11 @@
+body { margin: 0; font-family: system-ui, sans-serif; min-width: 320px; color: #172033; }
+main { padding: 16px; }
+h1 { font-size: 20px; margin: 0 0 12px; }
+button { width: 100%; border: 0; border-radius: 10px; padding: 10px; background: #2563eb; color: white; font-weight: 700; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+article, .last { border: 1px solid #dbe3f0; border-radius: 12px; padding: 12px; background: #f8fbff; }
+span { display: block; color: #536174; font-size: 12px; }
+strong { font-size: 22px; }
+.last { margin-top: 10px; }
+h2 { font-size: 14px; margin: 0 0 6px; }
+p { margin: 0; }
